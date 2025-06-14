@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator - Rohan Mazumder</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-calculator"></i> Calculator</h1>
+            <p>Perform basic arithmetic operations</p>
+
+        <div class="calculator">
+            <div class="display-section">
+                <div class="history" id="history"></div>
+                <div class="current-display" id="display">0</div>
+            </div>
+
+            <div class="buttons-grid">
+                <!-- First Row -->
+                <button class="btn btn-clear" id="clear">C</button>
+                <button class="btn btn-clear" id="clearEntry">CE</button>
+                <button class="btn btn-operator" id="backspace"><i class="fas fa-backspace"></i></button>
+                <button class="btn btn-operator" id="divide">÷</button>
+
+                <!-- Second Row -->
+                <button class="btn btn-number" id="seven">7</button>
+                <button class="btn btn-number" id="eight">8</button>
+                <button class="btn btn-number" id="nine">9</button>
+                <button class="btn btn-operator" id="multiply">×</button>
+
+                <!-- Third Row -->
+                <button class="btn btn-number" id="four">4</button>
+                <button class="btn btn-number" id="five">5</button>
+                <button class="btn btn-number" id="six">6</button>
+                <button class="btn btn-operator" id="subtract">−</button>
+
+                <!-- Fourth Row -->
+                <button class="btn btn-number" id="one">1</button>
+                <button class="btn btn-number" id="two">2</button>
+                <button class="btn btn-number" id="three">3</button>
+                <button class="btn btn-operator" id="add">+</button>
+
+                <!-- Fifth Row -->
+                <button class="btn btn-number" id="zero">0</button>
+                <button class="btn btn-number" id="decimal">.</button>
+                <button class="btn btn-operator" id="percentage">%</button>
+                <button class="btn btn-equals" id="equals">=</button>
+            </div>
+        </div>
+
+        <div class="features">
+            <h3>Features</h3>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-plus"></i>
+                    <h4>Basic Operations</h4>
+                    <p>Addition, Subtraction, Multiplication, Division</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-percent"></i>
+                    <h4>Percentage</h4>
+                    <p>Calculate percentages easily</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-history"></i>
+                    <h4>History</h4>
+                    <p>View previous calculations</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-keyboard"></i>
+                    <h4>Keyboard Support</h4>
+                    <p>Use keyboard for calculations</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Responsive</h4>
+                    <p>Works on all device sizes</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-undo"></i>
+                    <h4>Clear Functions</h4>
+                    <p>Clear all or clear entry</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="keyboard-shortcuts">
+            <h3>Keyboard Shortcuts</h3>
+            <div class="shortcuts-grid">
+                <div class="shortcut">
+                    <kbd>0-9</kbd>
+                    <span>Numbers</span>
+                </div>
+                <div class="shortcut">
+                    <kbd>+ - * /</kbd>
+                    <span>Operations</span>
+                </div>
+                <div class="shortcut">
+                    <kbd>Enter</kbd>
+                    <span>Calculate</span>
+                </div>
+                <div class="shortcut">
+                    <kbd>Escape</kbd>
+                    <span>Clear</span>
+                </div>
+                <div class="shortcut">
+                    <kbd>Backspace</kbd>
+                    <span>Delete</span>
+                </div>
+                <div class="shortcut">
+                    <kbd>.</kbd>
+                    <span>Decimal</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>

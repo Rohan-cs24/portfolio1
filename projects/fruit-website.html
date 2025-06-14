@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Fruits - Rohan Mazumder</title>
+    <link rel="stylesheet" href="fruit-website.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-apple-alt"></i>
+                <span>Fresh Fruits</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#fruits" class="nav-link">Fruits</a>
+                <a href="#benefits" class="nav-link">Benefits</a>
+                <a href="#recipes" class="nav-link">Recipes</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-fruit" style="--delay: 0s; --x: 10%; --y: 20%;">🍎</div>
+            <div class="floating-fruit" style="--delay: 1s; --x: 80%; --y: 30%;">🍊</div>
+            <div class="floating-fruit" style="--delay: 2s; --x: 15%; --y: 70%;">🍌</div>
+            <div class="floating-fruit" style="--delay: 3s; --x: 85%; --y: 80%;">🍇</div>
+            <div class="floating-fruit" style="--delay: 4s; --x: 50%; --y: 90%;">🥝</div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Fresh & Delicious <span class="highlight">Fruits</span></h1>
+                <p class="hero-subtitle">Discover the world of healthy, organic, and fresh fruits</p>
+                <p class="hero-description">
+                    Nature's candy packed with vitamins, minerals, and antioxidants. 
+                    Explore our collection of the finest fruits from around the world.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#fruits" class="btn btn-primary">Explore Fruits</a>
+                    <a href="#benefits" class="btn btn-secondary">Learn Benefits</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fruits Section -->
+    <section id="fruits" class="fruits-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Fresh Fruits</h2>
+                <p class="section-subtitle">Handpicked for quality and freshness</p>
+            </div>
+            
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">All Fruits</button>
+                <button class="filter-tab" data-filter="citrus">Citrus</button>
+                <button class="filter-tab" data-filter="tropical">Tropical</button>
+                <button class="filter-tab" data-filter="berries">Berries</button>
+                <button class="filter-tab" data-filter="stone">Stone Fruits</button>
+            </div>
+
+            <div class="fruits-grid" id="fruitsGrid">
+                <!-- Fruits will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Health Benefits</h2>
+                <p class="section-subtitle">Why fruits are essential for your health</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Heart Health</h3>
+                    <p>Rich in potassium and fiber, fruits help maintain healthy blood pressure and reduce risk of heart disease.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Immune System</h3>
+                    <p>Packed with vitamin C and antioxidants, fruits boost your immune system and fight off infections.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-weight"></i>
+                    </div>
+                    <h3>Weight Management</h3>
+                    <p>Low in calories and high in fiber, fruits help you feel full while maintaining a healthy weight.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Eye Health</h3>
+                    <p>Beta-carotene and vitamin A in fruits support healthy vision and prevent eye-related diseases.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Brain Function</h3>
+                    <p>Antioxidants in fruits protect brain cells and may improve memory and cognitive function.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bone"></i>
+                    </div>
+                    <h3>Bone Health</h3>
+                    <p>Vitamins and minerals in fruits contribute to strong bones and prevent osteoporosis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section id="recipes" class="recipes-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Fruit Recipes</h2>
+                <p class="section-subtitle">Delicious ways to enjoy your fruits</p>
+            </div>
+            
+            <div class="recipes-grid">
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <i class="fas fa-blender"></i>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Tropical Smoothie</h3>
+                        <p class="recipe-description">A refreshing blend of mango, pineapple, and coconut milk</p>
+                        <div class="recipe-ingredients">
+                            <h4>Ingredients:</h4>
+                            <ul>
+                                <li>1 cup mango chunks</li>
+                                <li>1/2 cup pineapple</li>
+                                <li>1 cup coconut milk</li>
+                                <li>1 tbsp honey</li>
+                                <li>Ice cubes</li>
+                            </ul>
+                        </div>
+                        <button class="recipe-btn">View Recipe</button>
+                    </div>
+                </div>
+                
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <i class="fas fa-bowl-food"></i>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Berry Parfait</h3>
+                        <p class="recipe-description">Layered yogurt with mixed berries and granola</p>
+                        <div class="recipe-ingredients">
+                            <h4>Ingredients:</h4>
+                            <ul>
+                                <li>1 cup Greek yogurt</li>
+                                <li>1/2 cup mixed berries</li>
+                                <li>1/4 cup granola</li>
+                                <li>2 tbsp honey</li>
+                                <li>Mint leaves</li>
+                            </ul>
+                        </div>
+                        <button class="recipe-btn">View Recipe</button>
+                    </div>
+                </div>
+                
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <i class="fas fa-cookie-bite"></i>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Apple Cinnamon Bars</h3>
+                        <p class="recipe-description">Healthy baked bars with apples and warm spices</p>
+                        <div class="recipe-ingredients">
+                            <h4>Ingredients:</h4>
+                            <ul>
+                                <li>2 cups diced apples</li>
+                                <li>1 cup oats</li>
+                                <li>1/2 cup flour</li>
+                                <li>1 tsp cinnamon</li>
+                                <li>1/4 cup maple syrup</li>
+                            </ul>
+                        </div>
+                        <button class="recipe-btn">View Recipe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fruit Modal -->
+    <div id="fruitModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="fruit-image">
+                    <span class="fruit-emoji"></span>
+                </div>
+                <div class="fruit-details">
+                    <h2 class="fruit-name"></h2>
+                    <p class="fruit-description"></p>
+                    <div class="fruit-nutrition">
+                        <h3>Nutritional Benefits</h3>
+                        <ul class="nutrition-list"></ul>
+                    </div>
+                    <div class="fruit-facts">
+                        <h3>Fun Facts</h3>
+                        <ul class="facts-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-apple-alt"></i> Fresh Fruits</h3>
+                    <p>Bringing you the finest, freshest fruits from nature's garden.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#fruits">Fruits</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#recipes">Recipes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i>rm5464411@gmail.com</p>
+                    <p><i class="fas fa-phone"></i>7908712013</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fresh Fruits Website - Created by Rohan Mazumder</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="fruit-website.js"></script>
+</body>
+</html>
